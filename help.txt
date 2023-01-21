@@ -1,0 +1,3 @@
+https://create-react-app.dev/docs/making-a-progressive-web-app/
+
+https://github.com/viniarruda/react-boilerplate.git
