@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useCallback } from 'react'
 import styled from 'styled-components'
 import { Outlet, Link } from 'react-router-dom'

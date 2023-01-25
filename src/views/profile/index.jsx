@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useEffect } from 'react'
 import { View, Content, Heading } from '@adobe/react-spectrum'
 import { useStateValue } from '../../state'

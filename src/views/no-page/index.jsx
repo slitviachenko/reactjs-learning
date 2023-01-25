@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react'
 import { IllustratedMessage, Heading, Content } from '@adobe/react-spectrum'
 import NotFound from '@spectrum-icons/illustrations/NotFound'

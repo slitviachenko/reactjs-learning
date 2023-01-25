@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useEffect } from 'react'
 import { View, Text } from '@adobe/react-spectrum'
 import Alert from '@spectrum-icons/workflow/Alert'

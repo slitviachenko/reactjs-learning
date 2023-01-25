@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react'
 
 // https://react-spectrum.adobe.com/react-spectrum/Provider.html

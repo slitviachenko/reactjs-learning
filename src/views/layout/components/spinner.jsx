@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react'
 import { ProgressCircle } from '@react-spectrum/progress'
 import styled from 'styled-components'

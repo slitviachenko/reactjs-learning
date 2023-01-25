@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react'
 import { Flex, View } from '@adobe/react-spectrum'
 import styled from 'styled-components'

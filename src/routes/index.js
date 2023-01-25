@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react'
 import { StateProvider } from '../state'
 import reducers from '../state/reducers'

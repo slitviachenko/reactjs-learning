@@ -1,3 +1,5 @@
+'use strict'
+
 const LOGGED_IN_USER_KEY = 'logged_in_user'
 
 // @todo: jsdoc/require-jsdoc

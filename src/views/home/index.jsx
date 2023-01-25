@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react'
 import { View, Content, Heading } from '@adobe/react-spectrum'
 

@@ -1,3 +1,5 @@
+'use strict'
+
 import { saveLoggedInUser, clearLoggedInUser } from './storage'
 
 export const SIGN_IN_WITH_GOOGLE = 'auth/SIGN_IN_WITH_GOOGLE'

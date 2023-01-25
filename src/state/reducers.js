@@ -1,3 +1,5 @@
+'use strict'
+
 import authReducer, { STATE_KEY as AUTH_STATE_KEY } from './auth/reducer'
 
 export default (state, action) => ({

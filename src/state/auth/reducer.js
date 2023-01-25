@@ -1,3 +1,5 @@
+'use strict'
+
 import { SIGN_IN_WITH_GOOGLE, LOGOUT } from './actions'
 import { getLoggedInUser } from './storage'
 

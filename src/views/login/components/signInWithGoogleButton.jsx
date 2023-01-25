@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useEffect } from 'react'
 import { Heading } from '@adobe/react-spectrum'
 import styled from 'styled-components'
