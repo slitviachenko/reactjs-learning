@@ -21,7 +21,7 @@ const useSignInWithGoogle = () => {
         const loginApiResponse = await postData(loginApiUrl, {
           credential: signInWithGoogleResponse.credential
         })
-        dispatch(signInWithGoogle(loginApiResponse.user))
+        dispatch(signInWithGoogle(loginApiResponse.data))
       } catch (e) {
         setError(e.message)
       }
