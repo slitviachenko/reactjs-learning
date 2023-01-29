@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useStateValue } from '../../index'
 import { signInWithGoogle } from '../actions'
-import { STATE_KEY as AUTH_STATE_KEY, STATE_USER_KEY } from '../reducer'
+import { STATE_KEY as AUTH_STATE_KEY, STATE_GET_LOGGED_IN_USER_KEY } from '../reducer'
 import { postData } from '../../../helper/fetch'
 
 const loginApiUrl = process.env.REACT_APP_BACKEND_API_URL + '/login'
@@ -12,7 +12,7 @@ const useSignInWithGoogle = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState(null)
   const [state, dispatch] = useStateValue()
-  const loggedInUser = state[AUTH_STATE_KEY][STATE_USER_KEY]
+  const loggedInUser = state[AUTH_STATE_KEY][STATE_GET_LOGGED_IN_USER_KEY]()
 
   if (loggedInUser === null) {
     const handleSignInWithGoogle = async (signInWithGoogleResponse) => {

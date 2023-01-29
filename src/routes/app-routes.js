@@ -15,11 +15,11 @@ import Profile from '../views/profile'
 import NoPage from '../views/no-page'
 
 import { useStateValue } from '../state'
-import { STATE_KEY as AUTH_STATE_KEY, STATE_USER_KEY } from '../state/auth/reducer'
+import { STATE_KEY as AUTH_STATE_KEY, STATE_GET_LOGGED_IN_USER_KEY } from '../state/auth/reducer'
 
 const AppRoutes = () => {
   const [state] = useStateValue()
-  const loggedInUser = state[AUTH_STATE_KEY][STATE_USER_KEY]
+  const loggedInUser = state[AUTH_STATE_KEY][STATE_GET_LOGGED_IN_USER_KEY]()
 
   return (
     <AdobeReactSpectrumProvider theme={defaultTheme}>

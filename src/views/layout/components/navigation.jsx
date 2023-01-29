@@ -4,7 +4,10 @@ import React, { useCallback } from 'react'
 import styled from 'styled-components'
 import { Outlet, Link } from 'react-router-dom'
 import { useStateValue } from '../../../state'
-import { STATE_KEY as AUTH_STATE_KEY, STATE_USER_KEY } from '../../../state/auth/reducer'
+import {
+  STATE_KEY as AUTH_STATE_KEY,
+  STATE_GET_LOGGED_IN_USER_KEY
+} from '../../../state/auth/reducer'
 import { logout } from '../../../state/auth/actions'
 
 const Nav = styled.nav`
@@ -40,7 +43,7 @@ const NavList = styled.ul`
 
 const Navigation = () => {
   const [state, dispatch] = useStateValue()
-  const loggedInUser = state[AUTH_STATE_KEY][STATE_USER_KEY]
+  const loggedInUser = state[AUTH_STATE_KEY][STATE_GET_LOGGED_IN_USER_KEY]()
 
   const handleLogoutOnClick = useCallback(
     async (e) => {

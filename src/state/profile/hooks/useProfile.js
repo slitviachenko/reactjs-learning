@@ -5,13 +5,13 @@ import { useStateValue } from '../../index'
 import { STATE_KEY as PROFILE_STATE_KEY } from '../reducer'
 import { loadProfile } from '../queries'
 import { setProfileData } from '../actions'
-import { STATE_KEY as AUTH_STATE_KEY, STATE_USER_KEY } from '../../auth/reducer'
+import { STATE_KEY as AUTH_STATE_KEY, STATE_GET_LOGGED_IN_USER_KEY } from '../../auth/reducer'
 
 const useProfile = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState(null)
   const [state, dispatch] = useStateValue()
-  const loggedInUser = state[AUTH_STATE_KEY][STATE_USER_KEY]
+  const loggedInUser = state[AUTH_STATE_KEY][STATE_GET_LOGGED_IN_USER_KEY]()
 
   const request = async () => {
     setIsLoading(true)
