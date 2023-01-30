@@ -31,7 +31,7 @@ const SignInWithGoogleButton = ({ handleSignInWithGoogle }) => {
       // google.accounts.id.prompt() is used to automatically ask the user to sign in immediately they open your web page. It can be placed in the root file or the login page.
       // google.accounts.id.prompt()
     }
-  })
+  }, [])
 
   return (
     <>

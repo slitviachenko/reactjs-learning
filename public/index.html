@@ -24,8 +24,11 @@
 
     <!--
       https://developers.google.com/identity/gsi/web/guides/display-button#javascript
+
+      I had to remove an "async" attribute due to an issue with components re-rendering by
+      'react-router-dom' BrowserRouter.
     -->
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" defer></script>
 
     <title>React App</title>
   </head>
